@@ -1,0 +1,19 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/posts",
+        "prod_uri":"mysql://root:@localhost/posts",
+        "fb_uri":"https://www.facebook.com/BodyBuildingTipsnTricks/?eid=ARA8l8wOc4WA1pSLwR2em63pMZ9fVp5QZTldGiIoEnpz0Q5Ja3fWFeZMNaIDXIXHhefQU7vydl_zv2bQ",
+        "matplotlib_uri":"https://matplotlib.org/examples/pylab_examples/simple_plot.html",
+        "seaborn_uri":"https://seaborn.pydata.org/",
+        "machine_learning_mastery":"https://machinelearningmastery.com/",
+        "gmail_user":"cabc1@gamil.com",
+        "gmail_pass":"abc@123123123",
+        "gmail_receiver":"bhawsarshubham741@gmail.com",
+        "no_of_posts":2,
+        "admin_user":"abc@gmail.com",
+        "admin_pass":"abt@123123123",
+        "upload_location":"E:\\Project\\digital farming\\web\\static\\uploads"
+    }
+}

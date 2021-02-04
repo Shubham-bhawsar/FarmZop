@@ -1,0 +1,237 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- breadcrumb start-->
+  <section class="breadcrumb breadcrumb_bg">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="breadcrumb_iner text-center">
+                      <div class="breadcrumb_iner_item">
+                    
+                          <h2>Predict Your Yield</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- breadcrumb start-->
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section section_padding">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {
+              lat: -25.363,
+              lng: 131.044
+            };
+            var grayStyles = [{
+                featureType: "all",
+                stylers: [{
+                    saturation: -90
+                  },
+                  {
+                    lightness: 50
+                  }
+                ]
+              },
+              {
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#ccdee9'
+                }]
+              }
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                lat: 26.14,
+                lng: 78.10
+              },
+              zoom: 15,
+              styles: grayStyles,
+              scrollwheel: false
+            });
+          }
+        </script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+        </script>
+        <script>
+          var myObj = { {}}};
+          console.log(myObj);
+        </script>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Predict Your Yield</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="/yield" method="post" id="earlyyield"
+            novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="Crop" id="Crop" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Crop'" placeholder='Crop'>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="MnTR" id="MnTR" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Min Temp Rabi'" placeholder='Min Temp Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="MnTK" id="MnTK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Min Temp Kharif'" placeholder='Min Temp Kharif'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="MnTW" id="MnTW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Min Temp Whole'" placeholder='Min Temp Whole'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="MxTR" id="MxTR" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Max Temp Rabi'" placeholder='Max Temp Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="MxTK" id="MxTK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Max Temp Kharif'" placeholder='Max Temp Khari'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="MxTW" id="MxTW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Max Temp Whole'" placeholder='Max Temp Whole'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="PPR" id="PPR" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Precipitation'" placeholder='Precipitation Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="PPK" id="PPK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Precipitation Kharif'" placeholder='Precipitation Kharif'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="PPW" id="PPW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Area'" placeholder='Precipitation Whole'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="VPR" id="VPR" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Vapour Pressure Rabi'" placeholder='Vapour Pressure Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="VPK" id="VPK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Vapour Pressure Kharif'" placeholder='Vapour Pressure Kharif'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="VPW" id="VPW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Vapour Pressure Whole'" placeholder='Vapour Pressure Whole'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="WDR" id="WDR" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Wet Day Rabi'" placeholder='Wet Day Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="WDK" id="WDK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Wet Day Kharif'" placeholder='Wet Day Kharif'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="WDW" id="WDW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Wet Day Whole'" placeholder='Wet Day Whole'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="RCER" id="RCER" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'RCE Rabi'" placeholder='RCE Rabi'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="RCEK" id="RCEK" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'RCE Kharif'" placeholder='RCE Kharif'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="RCEW" id="RCEW" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'RCE'" placeholder='RCE Whole'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="area" id="area" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Area'" placeholder='Area'>
+                </div>
+              </div>
+              <div class="col-12">
+                <h3>{{result}}</h3>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_4" >Get Result</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>IIITM Gwalior</h3>
+              <p>258, BH1</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3>+91 8878674076</h3>
+              <p>Mon to Fri 9am to 6pm</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3>bhawsarshubham741@gmail.com</h3>
+              <p>Send us your query anytime!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->
+
+ {% endblock %}

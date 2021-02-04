@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="breadcrumb dashboard_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <p> <span></span> </p>
+
+                            <h2>User Dashboard</h2>
+                            <img src="{{url_for('static',filename='avatar.jpg')}}" alt="Avatar" class="avatar">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+  <div>
+  	<div class="btn-group">
+  		
+  	<h4><a href="/edit/0"><button class="btn_2 d-none d-sm-block ml-2 mr-2"> Add Data</button></a></h4>
+  	<h4><a href="/logout"><button  class="btn_2 d-none d-sm-block  mr-2" > SignOut &rarr;</button></a></h4>
+  	</div>
+  	
+  	<hr>
+  	<h2 class="ml-2">Upload File</h2>
+
+  	<form action="/uploader" method="post" enctype="multipart/form-data">
+  		<input type="File" name="file1" class="ml-2">
+  		<button type="submit" class="btn_2 d-none d-sm-block mt-2 ml-2 mb-2" >Submit </button>
+  	</form>
+  </div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S.No.</th>
+      <th scope="col">Title</th>
+      <th scope="col">Date</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th> 
+    </tr>
+  </thead>
+  <tbody>
+  	{% for post in blogs %}
+    <tr>
+      <th scope="row">{{post.SNo}}</th>
+      <td>{{post.Title}}</td>
+      <td>{{post.Date}}</td>
+      <td><a href="/edit/{{post.SNo}}" class=btn_2>Edit</a></td>
+      <td><a href="/delete/{{post.SNo}}" class=btn_2> Delete </a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+{% endblock %}

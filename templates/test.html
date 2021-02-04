@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <p>BLOG <span>//</span> Blog</p>
+                            <h2>Our Blog</h2>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr></hr>
+    <h2 class="col-lg-8">EDIT BLOGS</h2>
+ <div class="col-lg-8">
+          <form class="form-contact contact_form" action="/contact" method="post" id="contactForm"
+            novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+
+                  <textarea class="form-control w-100" name="Content" id="Content" cols="30" rows="9"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = ''"
+                    placeholder='Enter Content'></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="Title" id="Title" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your Title'" placeholder='Enter your Title'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="Slug" id="Slug" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Slug'" placeholder='Enter Slug'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="SNo" id="SNo" type="number" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter SNo'" placeholder='Enter SNo'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="Img" id="Img" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Img path'" placeholder='Enter Img path'>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_4" >Send Message</button>
+            </div>
+          </form>
+        </div>
+{% endblock %}

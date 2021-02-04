@@ -1,0 +1,193 @@
+{% extends "layout.html" %}
+{% block body %}
+    
+    <!-- breadcrumb start-->
+   <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            
+                            <h2>Disease Detection</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!--::exclusive_item_part start::-->
+    <section class="team_member_section section_padding single_team_member_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-xl-6">
+                    <div class="section_tittle">
+                        <p>Plant Disease Detection</p>
+                        <h2>Have a Look at Leaves</h2>
+                        <span>Here are few example of leaves with disease names, They are just here to show how an image is needed to be clicked for perfect detection</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/apple black rot.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Black Rot</a></h3>
+                            <p>Apple</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/grape black rot.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Black Rot</a></h3>
+                            <p>Grapes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/northern leaf blight corn.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Northern Leaf Blight</a></h3>
+                            <p>Corn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/Potato Early Blight.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Early Blight</a></h3>
+                            <p>Potato </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/squash powdery mildew.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Powdery Mildew</a></h3>
+                            <p>Squash</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static',filename='img/leaves/strawberry leaf scorch.jpg')}}" alt="">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="single_blog_text">
+                            <h3><a href="blog.html">Leaf Scorch</a></h3>
+                            <p>Strawberry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::exclusive_item_part end::-->
+
+    <!--:::::::::::sibscribe part start:::::::::::::-->
+    <section class="sibscribe-area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="sibscribe-text text-center">
+                    <h1>Detect Your Disease Now!!</h1>
+                    <p>Deep saw bearing seasons in two itself days hath</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <form class="sibscribe-form" action="/trainers" method="post" id="diseasedetection" enctype="multipart/form-data"
+                    novalidate="novalidate">
+                        <input type="file" class="form-control" id="exampleInputEmail11"  name="file" placeholder='Upload Leaf Image'
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address'">
+                        <!-- <a class="btn_2 sibscribe-btm">Upload</a> -->
+                            <button type="submit" class="btn_2 sibscribe-btm" >Upload</button>
+                        
+                          
+                    </form>
+                    
+                    <!-- <form class="sibscribe-form" method="POST" action="/trainers" enctype="multipart/form-data">
+                        <input type="file" class="form-control" placeholder='Upload Leaf Image' name="file" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address'">
+                        <p><input type="submit" class="btn_2 sibscribe-btm" value="Upload"></p>
+                      </form> -->
+                </div>
+                <span></span>
+                
+            </div>
+            <div class="section_padding row justify-content-center">
+                <h3>{{Result}}</h3>
+            </div>
+            
+        </div>
+    </section>
+    <!--:::::::::::sibscribe part end:::::::::::::-->
+
+    <!-- footer part start-->
+  {% endblock %}

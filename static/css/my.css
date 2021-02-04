@@ -1,0 +1,113 @@
+.breadcrumb_bga {
+    background-image: url("../images/demo/backgrounds/01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .breadcrumba {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .rowa{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+@media only screen and (min-width: 1200px) and (max-width: 3640px) {
+    /* line 301, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_common.scss */
+    .containera {
+      max-width: 1170px;
+    }
+  }
+
+.our_offer .col-lg-12a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  
+/* line 22, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+.breadcrumba .breadcrumb_inera {
+    height: 450px;
+    width: 100%;
+    display: table;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 22, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera {
+      height: 350px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 22, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera {
+      height: 350px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 22, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera {
+      height: 350px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 22, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera {
+      height: 350px;
+    }
+  }
+  
+  /* line 38, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+  .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 69px;
+  }
+  
+  /* line 42, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+  .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema h2 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 42, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 42, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 42, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+    .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema h2 {
+      font-size: 40px;
+    }
+  }
+  
+  /* line 64, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+  .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema p {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  
+  /* line 71, E:/171 Fitzone Fitness/171_ Fitzone_Fitness_html/sass/_breadcrumb.scss */
+  .breadcrumba .breadcrumb_inera .breadcrumb_iner_itema span {
+    margin: 0px 5px;
+    font-size: 15px;
+  }
+  
